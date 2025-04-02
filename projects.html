@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CyberSec Portfolio | My Projects</title>
-  <meta name="description" content="Showcase of cybersecurity projects and case studies">
+  <title>Projects | Zuka Cyber</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-950 text-gray-100">
   <!-- Navbar -->
-  <nav class="navbar p-4 fixed w-full z-50">
+  <nav class="navbar p-4 fixed w-full z-50 backdrop-blur-md bg-gray-950/80 border-b border-gray-800">
     <div class="container mx-auto flex justify-between items-center">
-      <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
+      <a href="index.html" class="text-2xl font-bold text-orange-400">Portfolio</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
-        <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
-        <li><a href="projects.html" class="text-blue-400">Projects</a></li>
-        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+        <li><a href="index.html#home" class="hover:text-orange-400 transition">Home</a></li>
+        <li><a href="index.html#about" class="hover:text-orange-400 transition">About</a></li>
+        <li><a href="projects.html" class="text-orange-400 font-medium">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-orange-400 transition">Contact</a></li>
       </ul>
       <button class="md:hidden text-2xl" id="menu-toggle">
         <i class="fas fa-bars"></i>
@@ -27,142 +25,60 @@
   </nav>
 
   <!-- Projects Hero -->
-  <section class="pt-32 pb-20 px-4">
+  <section class="pt-32 pb-20 px-4 bg-cover bg-center" 
+           style="background-image: linear-gradient(rgba(10, 10, 10, 0.9), rgba(20, 20, 20, 0.9)), url('https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg')">
     <div class="container mx-auto text-center">
       <h1 class="text-4xl md:text-5xl font-bold mb-6">My Projects</h1>
       <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-        Case studies and security assessments from real-world engagements
+        Collection of my cybersecurity work and challenges
       </p>
     </div>
   </section>
 
-  <!-- Projects Grid -->
-  <section class="py-16 bg-gray-800">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div class="project-card bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg" 
-                 alt="Network Security Assessment" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+  <!-- Projects Section -->
+  <section class="py-16 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <div class="bg-gray-900/50 rounded-lg overflow-hidden shadow-lg backdrop-blur-sm border border-gray-800">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg" 
+               alt="CTF Challenges" 
+               class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-4">CTF Challenge Solutions</h2>
+          <div class="mb-4">
+            <span class="inline-block bg-blue-600 text-white text-xs px-2 py-1 rounded mr-2">Cryptography</span>
+            <span class="inline-block bg-green-600 text-white text-xs px-2 py-1 rounded mr-2">Steganography</span>
+            <span class="inline-block bg-purple-600 text-white text-xs px-2 py-1 rounded">Networking</span>
           </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h3 class="text-2xl font-bold">Network Security Assessment</h3>
-              <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">2023</span>
-            </div>
-            <p class="text-gray-400 mb-4">
-              Comprehensive security evaluation of corporate network infrastructure, identifying critical vulnerabilities.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Nmap</span>
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Nessus</span>
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Metasploit</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              View Case Study <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-300 mb-4">
+            Comprehensive collection of my CTF challenge solutions demonstrating skills in:
+          </p>
+          <ul class="text-gray-300 mb-4 list-disc list-inside">
+            <li>Cryptographic algorithm analysis</li>
+            <li>Steganography techniques</li>
+            <li>Network traffic analysis</li>
+            <li>Binary exploitation</li>
+          </ul>
+          <div class="flex space-x-4">
+            <a href="ctf.html" class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded transition">
+              View All Challenges <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a href="categories/cryptography.html" class="inline-flex items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded transition">
+              Crypto Solutions
             </a>
           </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg" 
-                 alt="Web Application Penetration Test" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h3 class="text-2xl font-bold">Web App Penetration Test</h3>
-              <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">2023</span>
-            </div>
-            <p class="text-gray-400 mb-4">
-              Identified and exploited vulnerabilities in a financial services web application.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Burp Suite</span>
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">OWASP ZAP</span>
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">SQLi</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              View Case Study <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg" 
-                 alt="Red Team Exercise" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h3 class="text-2xl font-bold">Red Team Exercise</h3>
-              <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">2022</span>
-            </div>
-            <p class="text-gray-400 mb-4">
-              Simulated advanced persistent threat against enterprise environment.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Cobalt Strike</span>
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Custom Malware</span>
-              <span class="tech-badge bg-gray-600 text-xs px-2 py-1 rounded">Social Engineering</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              View Case Study <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Methodology Section -->
-  <section class="py-20">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-12 text-center">My Methodology</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="methodology-item p-6 bg-gray-800 rounded-lg">
-          <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
-            <i class="fas fa-search"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2">Discovery</h3>
-          <p class="text-gray-400">
-            Comprehensive reconnaissance and information gathering to identify potential attack vectors.
-          </p>
-        </div>
-        <div class="methodology-item p-6 bg-gray-800 rounded-lg">
-          <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
-            <i class="fas fa-bug"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2">Exploitation</h3>
-          <p class="text-gray-400">
-            Ethical exploitation of identified vulnerabilities to demonstrate real-world impact.
-          </p>
-        </div>
-        <div class="methodology-item p-6 bg-gray-800 rounded-lg">
-          <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2">Remediation</h3>
-          <p class="text-gray-400">
-            Detailed reporting with actionable recommendations to strengthen security posture.
-          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 py-12">
-    <div class="container mx-auto px-4">
+  <footer class="bg-gray-900 py-12 px-4">
+    <div class="container mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-6 md:mb-0">
-          <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
+          <a href="index.html" class="text-2xl font-bold text-blue-400">Zuka<span class="text-white">Cyber</span></a>
           <p class="text-gray-400 mt-2">© 2023 All rights reserved</p>
         </div>
         <div class="flex space-x-6">
@@ -173,22 +89,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    // Mobile menu toggle
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      const menu = document.querySelector('nav ul');
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('flex');
-      menu.classList.toggle('flex-col');
-      menu.classList.toggle('absolute');
-      menu.classList.toggle('top-16');
-      menu.classList.toggle('left-0');
-      menu.classList.toggle('right-0');
-      menu.classList.toggle('bg-gray-900');
-      menu.classList.toggle('p-4');
-      menu.classList.toggle('space-y-4');
-    });
-  </script>
 </body>
 </html>
