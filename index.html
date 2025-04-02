@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSec Portfolio | Digital Security Expert</title>
+  <meta name="description" content="Professional cybersecurity portfolio showcasing ethical hacking, penetration testing, and network security expertise">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="navbar p-4 fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="projects.html" class="hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-2xl" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero h-screen flex items-center justify-center text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
+    <div class="container mx-auto px-4 z-20">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Cybersecurity Expert | Digital Defender</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">Protecting digital frontiers through innovation and vigilance</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="contact.html" class="btn-secondary">Contact Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Grid -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center">Explore My Expertise</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Category Card 1 -->
+        <div class="category-card bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-user-secret text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Ethical Hacking</h3>
+            <p class="text-gray-400 mb-4">Authorized penetration testing and vulnerability assessments</p>
+            <a href="categories/ethical-hacking.html" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+              Explore <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Repeat for other 5 categories -->
+        <div class="category-card bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Penetration Testing</h3>
+            <p class="text-gray-400 mb-4">Comprehensive security assessments and red team exercises</p>
+            <a href="categories/pen-testing.html" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+              Explore <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="category-card bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-network-wired text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Network Security</h3>
+            <p class="text-gray-400 mb-4">Infrastructure protection and secure network architecture</p>
+            <a href="categories/network-security.html" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+              Explore <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
+          <p class="text-gray-400 mt-2">© 2023 All rights reserved</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      menu.classList.toggle('flex-col');
+      menu.classList.toggle('absolute');
+      menu.classList.toggle('top-16');
+      menu.classList.toggle('left-0');
+      menu.classList.toggle('right-0');
+      menu.classList.toggle('bg-gray-900');
+      menu.classList.toggle('p-4');
+      menu.classList.toggle('space-y-4');
+    });
+  </script>
+</body>
+</html>
