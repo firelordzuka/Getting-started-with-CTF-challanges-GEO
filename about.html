@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSec Portfolio | About Me</title>
+  <meta name="description" content="Professional background and cybersecurity expertise">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar (Same as index.html) -->
+  <nav class="navbar p-4 fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="text-blue-400">About</a></li>
+        <li><a href="projects.html" class="hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-2xl" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="pt-32 pb-20 px-4">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">About Me</h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Cybersecurity professional with expertise in ethical hacking, penetration testing, and network defense
+      </p>
+    </div>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/3 flex justify-center">
+          <div class="relative">
+            <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-500">
+              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
+                   alt="Profile" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-3 -right-3 bg-blue-600 rounded-full p-3">
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h2 class="text-3xl font-bold mb-6">Professional Background</h2>
+          <p class="text-gray-300 mb-6">
+            [Your professional summary placeholder. Highlight your experience, certifications, 
+            and areas of expertise in cybersecurity.]
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold text-blue-400 mb-2">Certifications</h3>
+              <ul class="text-sm text-gray-300">
+                <li>CEH</li>
+                <li>OSCP</li>
+                <li>CISSP</li>
+              </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold text-blue-400 mb-2">Specialties</h3>
+              <ul class="text-sm text-gray-300">
+                <li>Penetration Testing</li>
+                <li>Vulnerability Assessment</li>
+                <li>Incident Response</li>
+              </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold text-blue-400 mb-2">Tools</h3>
+              <ul class="text-sm text-gray-300">
+                <li>Kali Linux</li>
+                <li>Metasploit</li>
+                <li>Burp Suite</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center">Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="skill-item p-6 bg-gray-800 rounded-lg text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-lock text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Ethical Hacking</h3>
+          <p class="text-gray-400">Authorized penetration testing and vulnerability assessments</p>
+        </div>
+        <div class="skill-item p-6 bg-gray-800 rounded-lg text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-network-wired text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Network Security</h3>
+          <p class="text-gray-400">Secure network architecture and infrastructure protection</p>
+        </div>
+        <div class="skill-item p-6 bg-gray-800 rounded-lg text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-bug text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Vulnerability Research</h3>
+          <p class="text-gray-400">Identifying and analyzing security weaknesses</p>
+        </div>
+        <div class="skill-item p-6 bg-gray-800 rounded-lg text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-user-shield text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Security Training</h3>
+          <p class="text-gray-400">Educating teams on security best practices</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Same as index.html) -->
+  <footer class="bg-gray-900 py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
+          <p class="text-gray-400 mt-2">© 2023 All rights reserved</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle (Same as index.html)
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      menu.classList.toggle('flex-col');
+      menu.classList.toggle('absolute');
+      menu.classList.toggle('top-16');
+      menu.classList.toggle('left-0');
+      menu.classList.toggle('right-0');
+      menu.classList.toggle('bg-gray-900');
+      menu.classList.toggle('p-4');
+      menu.classList.toggle('space-y-4');
+    });
+  </script>
+</body>
+</html>
