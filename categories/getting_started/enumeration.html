@@ -1,107 +1,130 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>როგორ დავიწყოთ?</title>
-  <meta name="description" content="Beginner's guide to Capture The Flag competitions">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../../styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>როგორ დავიწყოთ?</title>
+<meta content="Beginner's guide to Capture The Flag competitions" name="description"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
 <body class="!bg-[#0a0a0a] text-gray-100" style="background-color: #0a0a0a !important;">
-  <!-- Navbar -->
-  <nav class="navbar p-4 fixed w-full z-50 backdrop-blur-md bg-[#0a0a0a] border-b border-gray-800">
-    <div class="container mx-auto flex justify-between items-center">
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
-        <li><a href="../about.html" class="hover:text-blue-400 transition">About</a></li>
-        <li><a href="../projects.html" class="hover:text-blue-400 transition">Projects</a></li>
-        <li><a href="../contact.html" class="hover:text-blue-400 transition">Contact</a></li>
-      </ul>
-      <button class="md:hidden text-2xl" id="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Category Hero -->
-  <section class="pt-32 pb-20 px-4 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg')">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">როგორ დავიწყოთ </h1>
-      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+<!-- Navbar -->
+<nav class="navbar p-4 fixed w-full z-50 backdrop-blur-md bg-[#0a0a0a] border-b border-gray-800">
+<div class="container mx-auto flex justify-between items-center">
+<ul class="hidden md:flex space-x-6">
+<li><a class="hover:text-blue-400 transition" href="/">Home</a></li>
+<li><a class="hover:text-blue-400 transition" href="../about.html">About</a></li>
+<li><a class="hover:text-blue-400 transition" href="../projects.html">Projects</a></li>
+<li><a class="hover:text-blue-400 transition" href="../contact.html">Contact</a></li>
+</ul>
+<button class="md:hidden text-2xl" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</nav>
+<!-- Category Hero -->
+<section class="pt-32 pb-20 px-4 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg')">
+<div class="container mx-auto text-center">
+<h1 class="text-4xl md:text-5xl font-bold mb-6">როგორ დავიწყოთ </h1>
+<p class="text-xl text-gray-300 max-w-3xl mx-auto">
         რა გვჭირდება CTF დავალებების გასაკეთებლად
       </p>
-    </div>
-  </section>
-
-  <!-- Breadcrumbs -->
-  <div class="bg-gray-800 py-4">
-    <div class="container mx-auto px-4">
-      <nav class="flex" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-          <li class="inline-flex items-center">
-            <a href="./ctf" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-white">
-              <i class="fas fa-home mr-2"></i>
+</div>
+</section>
+<!-- Breadcrumbs -->
+<div class="bg-gray-800 py-4">
+<div class="container mx-auto px-4">
+<nav aria-label="Breadcrumb" class="flex">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-white" href="./ctf">
+<i class="fas fa-home mr-2"></i>
               არტიკლები
             </a>
-          </li>
-          <li aria-current="page">
-            <div class="flex items-center">
-              <i class="fas fa-angle-right text-gray-500 mx-2"></i>
-              <span class="text-sm font-medium text-orange-400">როგორ დავიწყოთ</span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-    </div>
-  </div>
+</li>
+<li aria-current="page">
+<div class="flex items-center">
+<i class="fas fa-angle-right text-gray-500 mx-2"></i>
+<span class="text-sm font-medium text-orange-400">როგორ დავიწყოთ</span>
+</div>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<!-- New Article Content -->
+<section class="py-16 bg-black">
+<div class="container mx-auto px-4 max-w-4xl">
 
-  <!-- New Article Content -->
-  <section class="py-16 bg-black">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <article class="bg-gray-800 rounded-lg p-8 mb-12">
-        <h2 class="text-3xl font-bold mb-6 text-orange-400">ხელსაწყოები და მათი გამოყენება</h2>
-        <p class="text-gray-300 mb-4">
-          CTF დავალებების მიხედვით ბევრი სხვადასხვა ხელსაწყოს გამოყენება შეიძლება მოგიწიოთ, მათ შორის სკანირება, კრიპტოგრაფია, ექსპლუატაცია და კომპიუტერული ექსპერტიზა (Forensics).
-          ამისდა მიუხედავად ბევრი CTF დავალების საწყისი მიდგომა მსგავსიაა. აქ ჩამოვთვლით ყველაზე ხშირად გამოყენებად ხელსაწყოებს და მათ გამოყენებას:
-        </p>
-        
-        <ul class="list-disc list-inside text-gray-300 space-y-2">
-          <li><strong>nmap:</strong> ქსელის სკანერი, რომლითაც ვამოწმებთ რომელი პორტებია ღია და რა სერვისები გვხვდება.</li>
-          <li><strong>Burp Suite:</strong> საუკეთესოა Web-CTF-ისთვის. გვაძლევს შესაძლებლობას ვმართოთ მოთხოვნები, ვნახოთ რა იგზავნება და მივიღოთ შესაბამისი პასუხი.</li>
-          <li><strong>CyberChef:</strong> ონლაინ ინსტრუმენტი მონაცემების დეკოდირებისა და დაშიფვრისთვის. მაგალითად base64, rot13, hex, jwt და ა.შ.</li>
-          <li><strong>ghidra:</strong> რევერსინგისთვის გამოსადეგი ინსტრუმენტი. ვნახოთ, როგორ მუშაობს პროგრამა და როგორ ავუღოთ თავები compiled ბინარებზე.</li>
-          <li><strong>strings, file, ltrace, strace:</strong> ესენი ძირითად unix ხელსაწყოებია, რაც საშუალებას გვაძლევს ვნახოთ რა ფუნქციებს იძახს პროგრამა და გავიგოთ მეტი მის შესახებ.</li>
-          <li><strong>pwntools:</strong> Python ბიბლიოთეკა ექსპლუატაციისთვის. მრავალ ფუნქციას აერთიანებს და ხშირად გამოიყენება pwn კატეგორიაში.</li>
-          <li><strong>binwalk:</strong> გამოსადეგია სურათებში ან ბინარულ ფაილებში ინფორმაციის მოსაძებნად.</li>
-          <li><strong>steghide, zsteg, exiftool:</strong> გამოსადეგია stego კატეგორიისთვის, როდესაც ინფორმაციას მალავენ სურათში ან ფაილის მეტამონაცემებში.</li>
-        </ul>
-        
-        <p class="text-gray-300 mt-6">
-          ამ ხელსაწყოების გარდა მნიშვნელოვანია გქონდეთ Linux-ის საბაზისო ცოდნა და Bash-ის გამოყენების გამოცდილება, რადგან ხშირად დაგჭირდებათ სკრიპტების წერა, ფაილების ანალიზი ან სხვადასხვა command chaining.
-        </p>
-      </article>
-    </div>
-  </section>
+<article class="bg-gray-800 rounded-lg p-8 mb-12">
+<h2 class="text-3xl font-bold mb-6 text-orange-400">ხელსაწყოები და მათი გამოყენება</h2>
+<p class="text-gray-300 mb-6">
+    CTF დავალებების მიხედვით ბევრი სხვადასხვა ხელსაწყოს გამოყენება შეიძლება მოგიწიოთ, მათ შორის სკანირება, კრიპტოგრაფია, ექსპლუატაცია და კომპიუტერული ექსპერტიზა (Foresincs). 
+    ამისდა მიუხედავად ბევრი CTF დავალების საწყისი მიდგომა მსგავსია, აქ ვისაუბრებ ყველაზე ხშირად გამოყენებად ხელსაწყოებზე და მათ ეფექტურად გამოყენებაზე.
+  </p>
+<h3 class="text-2xl font-semibold text-orange-300 mt-10 mb-4">ენუმერაცია და დაზვერვა</h3>
+<h4 class="text-xl font-semibold text-orange-200 mt-6 mb-2">Nmap (Network Mapper)</h4>
+<p class="text-gray-300 mb-4">
+    Nmap არის ძალიან საჭირო და მრავალფუნქციური აპლიკაცია, რომელიც გამოიყენება ქსელის სკანირებისთვის, ღია პორტებისა და სერვისების აღმოჩენისთვის და მრავალი სხვა მიზნით.
+  </p>
+<p class="text-gray-300 font-semibold">ინსტალაცია:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>sudo apt install nmap</code></pre>
+<p class="text-gray-300 mb-4">
+    ეს ხელსაწყო უმეტესობა ხელსაწყოების მსგავსად ეშვება ტერმინალში და აქვს თავისი სხვადასხვა ოპციები. ამ ოპციებს დროშები (Flag) ეწოდება...
+  </p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
+<p class="text-gray-300 mb-4">
+    პორტების დიაპაზონის ან კონკრეტული პორტების მითითება:
+  </p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -p &lt;პორტი&gt; &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -p- &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
+<p class="text-gray-300 mb-4">სერვისების და ვერსიების აღმოჩენა:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -sV &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
+<p class="text-gray-300 mb-4">ოპერაციული სისტემის ამოცნობა:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -O &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
+<p class="text-gray-300 mb-4">ყველა დროშის სანახავად:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>man nmap</code></pre>
+<h4 class="text-xl font-semibold text-orange-200 mt-10 mb-2">ენუმერაცია (Dirb, Dirbuster, Gobuster)</h4>
+<p class="text-gray-300 mb-4">
+    ენუმერაცია არის აპლიკაციის გამოყენებით მსხვერპლის დირექტორიების, ქვედირექტორიების სერვისების ან სხვა აქტივების შესახებ ინფორმაციის სისტემატიური იდენტიფიკაციისა და შეგროვების პროცესი.
+  </p>
+<p class="text-gray-300 mb-4">მაგალითი მისამართი:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>abc.com</code></pre>
+<p class="text-gray-300 mb-4">ქვედირექტორიის მაგალითი:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>abc.com/inbox</code></pre>
+<p class="text-gray-300 font-semibold">Dirb ინსტალაცია:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>sudo apt install dirb</code></pre>
+<p class="text-gray-300 mb-4">ნაგულისხმევი wordlist-ით გაშვება:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>dirb &lt;საიტის-მისამართი&gt;</code></pre>
+<p class="text-gray-300 mb-4">საკუთარი wordlist-ის გამოყენება:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>dirb &lt;საიტის-მისამართი&gt; &lt;Wordlist-ის-მდებარეობა&gt;</code></pre>
+<p class="text-gray-300 mb-4">ფაილების გაფართოებების მითითება:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>dirb &lt;საიტის-მისამართი&gt; -X &lt;.გაფართოებები,.გამოყოფილი,.მძიმით&gt;</code></pre>
+<p class="text-gray-300 mb-4">დამატებითი ოპციებისთვის იხილეთ:</p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto"><code>man dirb</code></pre>
+</article>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 py-12">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-6 md:mb-0">
-          <p class="text-gray-400 mt-2">© 2025 All rights reserved</p>
-        </div>
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 py-12">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<p class="text-gray-400 mt-2">© 2025 All rights reserved</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-blue-400 transition" href="#"><i class="fab fa-github text-2xl"></i></a>
+<a class="text-gray-400 hover:text-blue-400 transition" href="#"><i class="fab fa-linkedin text-2xl"></i></a>
+<a class="text-gray-400 hover:text-blue-400 transition" href="#"><i class="fab fa-twitter text-2xl"></i></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
     // Mobile menu toggle
     document.getElementById('menu-toggle').addEventListener('click', function() {
       const menu = document.querySelector('nav ul');
