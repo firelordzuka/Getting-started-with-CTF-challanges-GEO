@@ -1,220 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essential CTF Tools | CyberSec Portfolio</title>
-  <meta name="description" content="Comprehensive guide to tools for Capture The Flag competitions">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../../styles.css">
-</head>
-<body class="bg-gray-900 text-white">
-  <!-- Navbar -->
-  <nav class="navbar p-4 fixed w-full z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
-        <li><a href="../about.html" class="hover:text-blue-400 transition">About</a></li>
-        <li><a href="../projects.html" class="hover:text-blue-400 transition">Projects</a></li>
-        <li><a href="../contact.html" class="hover:text-blue-400 transition">Contact</a></li>
-      </ul>
-      <button class="md:hidden text-2xl" id="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>
+<!-- Articles Section -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Article 1 -->
+      <article class="bg-gray-800 rounded-lg overflow-hidden">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg" 
+               alt="Network Analysis Tools" 
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h2 class="text-2xl font-bold">Network Analysis Tools</h2>
+            <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Essential</span>
+          </div>
+          <div class="flex items-center text-sm text-gray-400 mb-4">
+            <span><i class="fas fa-calendar-alt mr-1"></i> November 15, 2023</span>
+            <span class="mx-2">•</span>
+            <span><i class="fas fa-clock mr-1"></i> 15 min read</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Wireshark, tcpdump and other network analysis tools for solving CTF challenges.
+          </p>
+          <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+            Read Guide <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </article>
 
-  <!-- Category Hero -->
-  <section class="pt-32 pb-20 px-4 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg')">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Essential CTF Tools</h1>
-      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-        The must-have toolkit for solving CTF challenges
-      </p>
-    </div>
-  </section>
+      <!-- Article 2 -->
+      <article class="bg-gray-800 rounded-lg overflow-hidden">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" 
+               alt="Binary Analysis Tools" 
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h2 class="text-2xl font-bold">Binary Analysis Tools</h2>
+            <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Advanced</span>
+          </div>
+          <div class="flex items-center text-sm text-gray-400 mb-4">
+            <span><i class="fas fa-calendar-alt mr-1"></i> November 10, 2023</span>
+            <span class="mx-2">•</span>
+            <span><i class="fas fa-clock mr-1"></i> 15 min read</span>
+          </div>
+          <p class="text-gray-300 mb-4">
+            Reverse engineering and binary exploitation tools for tackling complex CTF challenges.
+          </p>
+          <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+            Read Article <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </article>
 
-  <!-- Breadcrumbs -->
-  <div class="bg-gray-800 py-4">
-    <div class="container mx-auto px-4">
-      <nav class="flex" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-          <li class="inline-flex items-center">
-            <a href="/" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-white">
-              <i class="fas fa-home mr-2"></i>
-              Home
-            </a>
-          </li>
-          <li aria-current="page">
-            <div class="flex items-center">
-              <i class="fas fa-angle-right text-gray-500 mx-2"></i>
-              <span class="text-sm font-medium text-blue-400">CTF Tools</span>
-            </div>
-          </li>
-        </ol>
-      </nav>
     </div>
   </div>
-
-  <!-- Articles Section -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Article 1 -->
-        <article class="bg-gray-800 rounded-lg overflow-hidden">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg" 
-                 alt="Network Analysis Tools" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h2 class="text-2xl font-bold">Network Analysis Tools</h2>
-              <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Essential</span>
-            </div>
-            <div class="flex items-center text-sm text-gray-400 mb-4">
-              <span><i class="fas fa-calendar-alt mr-1"></i> November 15, 2023</span>
-              <span class="mx-2">•</span>
-              <span><i class="fas fa-clock mr-1"></i> 15 min read</span>
-            </div>
-            <p class="text-gray-300 mb-4">
-              Wireshark, tcpdump and other network analysis tools for solving CTF challenges.
-            </p>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              Read Guide <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </article>
-
-
-
-
-<section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Article 1 -->
-        <article class="bg-gray-800 rounded-lg overflow-hidden">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg" 
-                 alt="Network Analysis Tools" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h2 class="text-2xl font-bold">Network Analysis Tools</h2>
-              <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Essential</span>
-            </div>
-            <div class="flex items-center text-sm text-gray-400 mb-4">
-              <span><i class="fas fa-calendar-alt mr-1"></i> November 15, 2023</span>
-              <span class="mx-2">•</span>
-              <span><i class="fas fa-clock mr-1"></i> 15 min read</span>
-            </div>
-            <p class="text-gray-300 mb-4">
-              Wireshark, tcpdump and other network analysis tools for solving CTF challenges.
-            </p>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              Read Guide <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </article>
-
-
-
-<section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Article 1 -->
-        <article class="bg-gray-800 rounded-lg overflow-hidden">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg" 
-                 alt="Network Analysis Tools" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h2 class="text-2xl font-bold">Network Analysis Tools</h2>
-              <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Essential</span>
-            </div>
-            <div class="flex items-center text-sm text-gray-400 mb-4">
-              <span><i class="fas fa-calendar-alt mr-1"></i> November 15, 2023</span>
-              <span class="mx-2">•</span>
-              <span><i class="fas fa-clock mr-1"></i> 15 min read</span>
-            </div>
-            <p class="text-gray-300 mb-4">
-              Wireshark, tcpdump and other network analysis tools for solving CTF challenges.
-            </p>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              Read Guide <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="bg-gray-800 rounded-lg overflow-hidden">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" 
-                 alt="Binary Analysis Tools" 
-                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-4">
-              <h2 class="text-2xl font-bold">Binary Analysis Tools</h2>
-              <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Advanced</span>
-            </div>
-            <div class="flex items-center text-sm text-gray-400 mb-4">
-              <span><i class="fas fa-calendar-alt mr-1"></i> November 10, 2023</span>
-              <span class="mx-2">•</span>
-              <span><i class="fas fa-clock mr-1"></i> 15 min read</span>
-            </div>
-            <p class="text-gray-300 mb-4">
-              Reverse engineering and binary exploitation tools for tackling complex CTF challenges.
-            </p>
-            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
-              Read Article <i class="fas fa-arrow-right ml-2"></i>
-
-
-
-              
-            </a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 py-12">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-6 md:mb-0">
-          <a href="/" class="text-2xl font-bold text-blue-400">CyberSec<span class="text-white">Portfolio</span></a>
-          <p class="text-gray-400 mt-2">© 2023 All rights reserved</p>
-        </div>
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Mobile menu toggle
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      const menu = document.querySelector('nav ul');
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('flex');
-      menu.classList.toggle('flex-col');
-      menu.classList.toggle('absolute');
-      menu.classList.toggle('top-16');
-      menu.classList.toggle('left-0');
-      menu.classList.toggle('right-0');
-      menu.classList.toggle('bg-gray-900');
-      menu.classList.toggle('p-4');
-      menu.classList.toggle('space-y-4');
-    });
-  </script>
-</body>
-</html>
+</section>
