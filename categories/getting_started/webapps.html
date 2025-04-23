@@ -90,39 +90,58 @@
 მისი დეტალურად შესწავლა შეიძლება შემდეგი ბმულიდან:
   </p>
 <pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>https://portswigger.net/training</code></pre>
+        
+<h4 class="text-xl font-semibold text-orange-200 mt-10 mb-2">SQL ინექცია sqlmap ის გამოყენებით</h4>
 <p class="text-gray-300 mb-4">
-    პორტების დიაპაზონის ან კონკრეტული პორტების მითითება:
+    Structured Querry Language ანუ SQL არის სტანდარტული პროგრამირების ენა მონაცემთა ბაზების შექმნისთვისა და მოდიფიცირებისთვის. 
+ვებ აპლიკაციების უმეტესი ნაწილი იყენებს SQL მონაცემთა ბაზებს სხვადასხვა ტიპის მონაცემების შესანახად, როგორიცაა: 
+მომხმარებელთა ინფორმაცია, ზოგადი ინფორმაცია, პაროლები და სხვა. SQL ინექცია სწორედ ამ სერვისის ექსპლუატაციას ისახავს მიზნად. 
+SQL ინექციის მეთოდით ჩვენ მონაცემემთა ბაზას ვატყუებთ, რომ შეგვყავს მონაცემი, თუმცა რეალურად შეგვყავს SQL კოდი და ვაიძულებთ გამოიტანოს ჩვენს მიერ მითითებული მონაცემები.
   </p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -p &lt;პორტი&gt; &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -p- &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
-<p class="text-gray-300 mb-4">სერვისების და ვერსიების აღმოჩენა:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -sV &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
-<p class="text-gray-300 mb-4">ოპერაციული სისტემის ამოცნობა:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>nmap -O &lt;მსხვერპლის-აიპი-მისამართი&gt;</code></pre>
-<p class="text-gray-300 mb-4">ყველა დროშის სანახავად:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>man nmap</code></pre>
-<h4 class="text-xl font-semibold text-orange-200 mt-10 mb-2">ენუმერაცია (Dirb, Dirbuster, Gobuster)</h4>
-<p class="text-gray-300 mb-4">
-    ენუმერაცია არის აპლიკაციის გამოყენებით მსხვერპლის დირექტორიების, ქვედირექტორიების სერვისების ან სხვა აქტივების შესახებ ინფორმაციის სისტემატიური იდენტიფიკაციისა და შეგროვების პროცესი.
-  </p>
-<p class="text-gray-300 mb-4">მაგალითი მისამართი:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>abc.com</code></pre>
-<p class="text-gray-300 mb-4">ქვედირექტორიის მაგალითი:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>abc.com/inbox</code></pre>
-<p class="text-gray-300 font-semibold">Dirb ინსტალაცია:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>sudo apt install dirb</code></pre>
-<p class="text-gray-300 mb-4">ნაგულისხმევი wordlist-ით გაშვება:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>dirb &lt;საიტის-მისამართი&gt;</code></pre>
-<p class="text-gray-300 mb-4">საკუთარი wordlist-ის გამოყენება:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>dirb &lt;საიტის-მისამართი&gt; &lt;Wordlist-ის-მდებარეობა&gt;</code></pre>
-<p class="text-gray-300 mb-4">ფაილების გაფართოებების მითითება:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>dirb &lt;საიტის-მისამართი&gt; -X &lt;.გაფართოებები,.გამოყოფილი,.მძიმით&gt;</code></pre>
-<p class="text-gray-300 mb-4">დამატებითი ოპციებისთვის იხილეთ:</p>
-<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto"><code>man dirb</code></pre>
-</article>
 
-</div>
-</section>
+<p class="text-gray-300 mb-4">
+  SQL ინექცია ხელით გაწერილი კოდითაც კეთდება, თუმცა ხშირ შემთხვევაში შეგვიძლია გამოვიყენოთ ისეთი ხელსაწყოები როგორიც არის sqlmap
+  </p>
+
+<p class="text-gray-300 mb-4">
+sqlmap არის ღია კოდის (open source) ტიპის ხელსაწყო, რომელიც ავტომატიზირებულად აღმოაჩენს მითითებულ ჰოსტებზე sql ინექციის ვექტორებს და ავტომატურადვე აკეთებს sql ინექციას.
+  </p>
+
+
+<p class="text-gray-300 mb-4">
+მისი დაყენება შეიძლება შემდეგნაირად:
+  </p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev</code></pre>
+
+<p class="text-gray-300 mb-4">
+sqlmap ეშვება ტერმინალში და აქვს თავისი დამატებითი ფუქნციები და "დროშები", მაგალითად:
+  </p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>sqlmap -u "http://მაგალითი.com/page.php?id=1" --dbs</code></pre>
+
+<p class="text-gray-300 mb-4">
+ამ ბრძანებით შეგვიძლია შევამოწმოთ ვებ-გვერდი და ვნახოთ მოცემულ მისამართზე თუ შეგვიძლია id=1 შეტევის ვექტორის განხორციელება. 
+ამ ხელსაწყოთი ასევე შეგვიძლია გამოვავლინოთ ყველა ცხრილი გვერდის მონაცემთა ბაზაში, ეს ხდება შემდეგნაირად:
+  </p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>sqlmap -u "http://მაგალითი.com/page.php?id=1" -D database_name --tables</code></pre>
+
+<p class="text-gray-300 mb-4">
+ხელსაწყოს კიდე მრავალი "დროშა" და ფუნქცია გააჩნია, მაგალითად sqlmap ის გამოყენებით შეგვიძლია WAF (Web Application Firewall) 
+გადავლახოთ და ისე გავაკეთოთ SQL ინექცია. მაგალითად:
+  </p>
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>sqlmap -u "http://მაგალითი.com/page.php?id=1" --random-agent --tamper=between</code></pre>
+
+
+<p class="text-gray-300 mb-4">
+ამ ბრძანებაში --random-agent "დროშა" იყენებს სხვადასხვა ბრაუზერის ინფორმაციას რომ დეტექციას აარიდოს თავი, --tamper=between კი აკეთებს ჩვენი შეტევის ობსფუსკაცია 
+( ობსფუსკაცია არის რაიმე კოდის, ბრძანების ან მსგავსი წარწერის გადაკეთება ისე, რომ ის უფრო ნაკლებად მარტივი წასაკითხი და გასაშიფრი იყოს )
+  </p>
+
+<p class="text-gray-300 mb-4">
+მეტი ოპციების და "დროშების" სანახავად გამოიყენეთ შემდეგი ბრძანება:
+  </p>
+
+<pre class="bg-gray-900 text-green-400 rounded p-4 overflow-x-auto mb-4"><code>man sqlmap</code></pre>
+
 <!-- Footer -->
 <footer class="bg-gray-900 py-12">
 <div class="container mx-auto px-4">
